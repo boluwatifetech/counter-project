@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.look {
+    color: black;
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:1024) {
+    .container h1 {
+        font-size: 30px;
+    }
+    .container span {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:480px) {
+    .container h1 {
+        font-size: 25px;
+    }
+    .container span {
+        font-size: 23px;
+    }
+    .button-container .btn {
+        padding: 5px 8px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+}
+
+.container span {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn {
+    margin-right: 15px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: cursive;
+    text-transform: capitalize;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.increase {
+    transition: all 1s ease;
+}
+
+.increase:hover {
+    outline: none;
+    border: none;
+    background: rgb(85, 204, 85);
+    color: white;
+}
+
+.decrease {
+    transition: all 1s ease;
+}
+
+.decrease:hover {
+    outline: none;
+    border: none;
+    background: rgb(177, 61, 61);
+    color: white;
+}
+
+.reset {
+    transition: all 1s ease;
+}
+
+.reset:hover {
+    outline: none;
+    border: none;
+    background: #000;
+    color: white;
+}
